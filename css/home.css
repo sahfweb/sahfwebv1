@@ -1,0 +1,1170 @@
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+.header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    background-color: white;
+    box-shadow: 0rem .7rem 8rem rgba(0,0, 0, .2);
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    height: 7.5rem;
+    width: 100%;
+    border-bottom: .1rem solid rgb(206, 133, 23);
+   
+}
+
+.header p{
+  font-size: 1.3rem;
+  color: black;
+  font-family: sans-serif;
+  font-weight: 500;
+  letter-spacing: .01rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+
+
+.logo{
+    height: 6rem;
+    width: 7.5rem;
+    left: 0%;
+    top: 0%;
+
+}
+.logo img{
+    height: 5.5rem;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+   
+
+
+}
+
+.navbar ul{
+  list-style: none;
+  margin-left: 2rem;
+}
+
+.navbar ul li{
+    position: relative;
+    float: left;
+   
+}
+
+.navbar ul li a{
+    font-size: 1.4rem;
+    padding: .8rem;
+    color:black;
+    display: block;
+    font-family: serif;
+}
+
+.navbar ul li a i{
+    font-size: 1.4rem;
+    color:rgb(225, 17, 17);
+}
+
+.navbar ul li a:hover{
+    background-color:  rgba(0,0, 0, .8);
+    color:white;
+    transition: 0.4s;
+    border-radius:  .4rem .4rem 0rem 0rem;
+}
+
+
+  
+.navbar ul li ul{
+    position: absolute;
+    left: -2rem;
+    width: 12rem;
+    background-color:rgba(0,0, 0, .5);
+    font-family: serif;
+    display: none;
+}
+
+.navbar ul li ul li{
+    left: 0rem;
+    width: 100%;
+}
+
+.navbar ul li ul li a{
+    font-size: 1.1rem;
+    color:white;
+}
+
+.navbar ul li:focus-within > ul,
+.navbar ul li:hover > ul{
+    display: initial;
+}
+
+.donatebtn a{
+    position: absolute;
+    text-decoration: none;
+    background-color: brown;
+    color: white;
+    top: 2.6rem;
+    right: 4rem;
+    padding: .3rem;
+    font-size: 1.3rem;
+    border-radius: .4rem;
+
+}
+
+.donatebtn i{
+    padding-right:.3rem;
+}
+
+.login i{
+    position: absolute;
+    right: 1.5rem;
+    text-decoration: none;
+    top: 2.5rem;
+    font-size: 2rem;
+    color: brown;
+}
+
+#menu{
+    display: none;
+    
+}
+header label {
+    position: absolute;
+    color: rgb(15, 7, 7);
+    right: 2rem;
+    top: 1.7rem;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* **********  home image slider
+  **************************  */
+
+
+.home-slid{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #343f4f;
+    border-bottom: .1rem solid rgb(206, 133, 23);
+
+}
+
+
+.wrapper .carousel{
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img{
+    pointer-events: none;
+}
+.carousel img{
+    position: relative;
+    top: 4rem;
+    height: 40rem;
+    width: 100%;
+    object-fit: fill;
+
+}
+
+.carousel img:first-child{
+    margin-left: 0rem;
+}
+.wrapper i{
+    color: rgb(190, 28, 28);
+    position: absolute;
+    background: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 50%;
+    height: 3rem;
+    top: 50%;
+    z-index: 3;
+    
+ }
+
+.wrapper i:first-child{
+    margin-left: 1rem;
+   
+}
+
+.wrapper i:last-child{
+    right: 1rem;
+}
+
+
+/** welcome to *************
+****************    *******/
+
+.welcome-to{
+    position: relative;
+}
+
+.welcome-to h1{
+    position: relative;
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+    top: 1rem;
+    text-align: center;
+  
+
+}
+
+.welcome-to h1::after{
+    content: "Safezone-Active Humanity Foundation";
+    font-size: 2rem;
+    color: #a8281a;
+
+}
+
+.welcome-allimg{
+    position: relative;
+    top: 2REM;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:.1rem 3rem .5rem 2rem;
+  
+   
+} 
+
+.welcome-img{
+    height: auto;
+    padding: 2rem;
+    width: calc(100%/3);
+    max-width: 45rem;
+  
+   
+}
+.welcome-img img{
+    height: 14rem;
+    width: 100%;
+    border-radius: .7rem;
+    border: .1rem solid black;
+   
+    
+
+}
+
+.welcome-img i{
+    position: relative;
+    top: .5rem;
+    font-size: 1.5rem;
+    left: 1rem;
+    color: #a8281a;
+
+
+}
+
+.welcome-img h2{
+    position: relative;
+    left: 3rem ;
+    top: -.7rem;
+    font-size: 1.4rem;
+    color: #780206;
+    text-transform: capitalize;
+}
+.welcome-img p{
+    position: relative;
+    left: .5rem ;
+    top: -.6rem; 
+    letter-spacing: .03rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: sans-serif;
+    word-spacing: .2rem;
+}
+
+
+/* ***********************
+******  EVENT ************/
+
+.event{
+    position: relative;
+
+}
+
+.event h1{
+    position: relative;
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 600;
+    top: 1rem;
+    text-align: center;
+  
+
+}
+
+.event h1::after{
+    content: "EVENT";
+    font-size: 1.6rem;
+    color: #a8281a;
+}
+
+.event-cont{
+    position: relative;
+    top: 2REM;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:.1rem 4rem .5rem 4rem;
+}
+
+.event-img{
+    height: auto;
+    padding: 2rem;
+    width: calc(100%/3);
+    max-width: 45rem;
+  
+   
+}
+
+.event-img img{
+    height: 14rem;
+    width: 100%;
+    border-radius: .7rem;
+    border: .1rem solid black;
+   
+    
+
+}
+
+.event-img h2{
+    position: relative;
+    left: 1rem ;
+    font-size: 1.4rem;
+    color: #780206;
+    text-transform: capitalize;
+}
+
+.event-img p{
+    position: relative;
+    left: .7rem ;
+    letter-spacing: .02rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    word-spacing: .2rem;
+}
+
+.event-img p a{
+    color: rgb(41, 41, 216);
+}
+
+/**************************
+ ******* about  ***********/
+
+.about{
+    position: relative;
+
+}
+
+.about h1{
+    position: relative;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 600;
+    top: 2rem;
+    text-align: center;
+}
+
+.about h1::after{
+    content: "HUMANITY";
+    font-size: 1.6rem;
+    color: #a8281a;
+}
+
+.about-cont{
+    position: relative;
+    top: 1REM;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:.1rem 10rem .5rem 10rem;
+}
+
+.about-img{
+    height: auto;
+    padding:5rem ;
+    width: calc(100%/2);
+    max-width: 45rem;
+  
+   
+}
+
+.about-img img{
+    height: 14rem;
+    width: 100%;
+    border-radius: .7rem;
+    border: .1rem solid black;
+   
+    
+
+}
+
+.about-img h2{
+    position: relative;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #780206;
+    text-transform: capitalize;
+}
+
+.about-img p{
+    position: relative;
+    left: .7rem ;
+    letter-spacing: .02rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    word-spacing: .2rem;
+}
+
+
+/*  ***********
+     counter  ** */
+
+.counter{
+    position:relative ;
+    height: 20rem;
+    width: 100%;
+    background-image: url(/images1/homeimg5.jpg);
+    background-size:cover ;
+    background-attachment: fixed;
+    opacity: 1;
+    border-top: .1rem solid rgb(206, 133, 23);
+    border-bottom: .1rem solid rgb(206, 133, 23);
+}
+    
+.counterdiv1 {
+    position: relative;
+    height: 16rem;
+    width: 31rem;
+    top: 2.5rem;
+    left: 8%;
+    background-color: rgb(245, 242, 238);
+    border-radius: .6rem;
+    border: .1rem solid rgb(44, 43, 43);
+    
+}
+    
+.counterdiv1 h5{
+    position: absolute;
+    left: .5rem;
+    top: .5rem;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color: #ad3719;
+}
+
+.counterdiv1 h2{
+    position: absolute;
+    left: 1rem;
+    top: 2rem;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    color: black;
+}
+    
+.counterdiv1 p{
+    position: absolute;
+    left: 1.2rem;
+    top: 4.5rem;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    color:rgb(63, 60, 60);
+}
+    
+.volunteer-join1 {
+    position: absolute;
+    height: 2rem;
+    width: 10rem;
+    left: 2rem;
+    bottom: 1rem;
+}
+
+.volunteer-join1 a{
+    position: absolute;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    font-size: 1.1rem;
+    color: aliceblue;
+    background-color: #780206;
+    border-radius: .5rem;
+    padding: .4rem;
+    left: .3rem;
+}
+    
+
+#counter-Years{
+    position: relative;
+    display: flex;
+    top: -13rem;
+    left: 50%;
+    height: 6.5rem;
+    width: 14rem;
+    background-color: black;
+    opacity: .7 ;
+}    
+    
+ 
+#counter-happychi{
+    position: relative;
+    display: flex;
+    top: -19.5rem;
+    left: 68%;
+    height: 6.5rem;
+    width: 14rem;
+    background-color: black;
+    opacity: .7;
+}    
+ 
+#counter-event{
+    position: relative;
+    display: flex;
+    top: -17.5rem;
+    left: 50%;
+    height: 6.8rem;
+    width: 14rem;
+    background-color: black;
+    opacity: .7 ;
+}
+
+#counter-fund{
+    position: relative;
+    top: -24rem;
+    left: 68%;
+    height: 6.8rem;
+    width: 14rem;
+    background-color: black;
+    opacity: .7;
+}
+    
+.countershow h2{
+    position: absolute;
+    top: 1rem;
+    left: 27%;
+    color: wheat;
+    font-size: 1.5rem;
+}
+    
+.countershow p{
+    position: absolute;
+    display: flex;
+    top: 3.5rem;
+    color: rgb(209, 192, 164);
+    font-size: 1.2rem;
+    left: 12%;
+    font-weight: 600;
+}
+    
+.countershow i{
+    position: absolute;
+    font-size: 2rem;
+    top: 1rem;
+    left: 1rem;
+    color: #a31808;
+}
+
+
+
+/** video*************
+****************    *******/
+
+.video{
+    position: relative;
+
+}
+
+.video h1{
+    position: relative;
+    font-size: 1.8rem;
+    color: black;
+    font-weight: 600;
+    top: 1rem;
+    margin-left: 5rem;
+  
+
+}
+
+.video h1::before{
+    position: absolute;
+    content: "";
+    height: .1rem;width: 4rem;
+    background-color: #400608;
+    border-radius: .1rem;
+    bottom: -.2rem;
+
+}
+
+
+.video-cont{
+    position: relative;
+    top: 1REM;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:.1rem 3rem .5rem 2rem;
+  
+   
+} 
+
+.video-img{
+    height: auto;
+    padding: 2rem;
+    width: calc(100%/4); 
+    max-width: 45rem;
+}
+.video-img iframe{
+    height: 14rem;
+    width: 100%;
+    border-radius: .7rem;
+    border: .1rem solid black;
+   
+    
+
+}
+
+
+.video-img h2{
+    position: relative;
+    left: 3rem ;
+    top: .3rem;
+    font-size: 1.4rem;
+    color: #780206;
+    text-transform: capitalize;
+}
+
+
+/*********************
+****************** footer  ******/
+
+
+.footer{
+    position: relative;
+    background-color: #151c26;
+    border-top: .1rem solid rgb(206, 133, 23);
+    border-bottom: .1rem solid rgb(206, 133, 23);
+    height: 18rem;
+
+}
+
+.footer-cont{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:.1rem 3rem .5rem 2rem;
+    
+}
+
+.footer-col{
+    height: auto;
+    padding: 1.5rem 2.5rem ;
+    width: calc(100%/3); 
+    max-width: 40rem;
+
+}
+.footer-col h4{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+
+.footer-col hr{
+    position: relative;
+    width: 8rem;
+    height: .11rem;
+    border-radius: 1rem;
+    border: .01rem solid rgb(69, 9, 9);
+
+}
+
+.footer-col p{
+    position: relative;
+    top: .5rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: .2rem;
+    word-spacing: .1rem;
+    font-family: sans-serif;
+    margin: .6rem;
+}
+
+
+.footer-col p a{
+    position: relative;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: .15rem;
+    font-family: sans-serif;
+}
+
+
+
+.footer-col ul li{
+    position: relative;
+    top: .5rem;
+    list-style: none;
+    margin: .3rem .8rem ;
+}
+
+.footer-col ul li a{
+    position: relative;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    word-spacing: .1rem;
+    margin: .3rem .6rem ;
+    font-family: sans-serif;
+}
+
+.socil-icone{
+    position: relative;
+    top: -1rem;
+}
+
+.socil-icone a i{
+    position: relative;
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    color: white;
+    font-size:1.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    margin: .5rem;
+    background-color: rgba(255,255, 255,0.2);
+    transition: all.5s ease;
+
+}
+
+.socil-icone a i:hover{
+    color: #24262b;
+    background-color: #ffff;
+}
+
+
+.footer h6{
+    position: relative;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500;
+    top: -.3rem;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: .2rem;
+  
+
+}
+.footer-cont::after{
+    position: absolute;
+    content: "";
+    height: .1rem;width: 100%;
+    background-color: #fff;
+    bottom: 1rem;
+    opacity: .4;
+  
+
+}
+
+
+
+        
+    
+ 
+
+
+
+
+
+
+
+
+
+@media(max-width:62rem){
+    .header{
+        height: 6rem;
+    }
+    .logo img{
+        height: 5.5rem;
+        width: 100;
+    }
+    header label{
+        display: initial;
+    }
+    .navbar{  
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 25rem;
+        height: 100vh;
+        background:  white;
+        overflow:auto;
+        z-index: 3;
+        display: none;
+       
+    }
+
+    .navbar ul li{
+       width: 100%;
+       
+    }
+    .navbar ul li a{
+        font-size: 1.7rem;
+        margin: .5rem .5rem .5rem .5rem ;
+        color: black;
+    }
+    
+
+    .navbar ul li a:hover{
+        background: rgba(32, 26, 26,0.9);
+        border-radius: .5rem;
+        color: #fff;
+    }
+    .navbar ul li ul{
+        left: 0rem;
+        position: relative;
+        width: 100%;
+
+    }
+
+    .navbar ul li ul li a{
+        padding: .3rem;
+        margin: 0rem 5rem .5rem 3rem;
+        font-size: 1.5rem;
+        border-bottom:.1rem solid rgb(17, 17, 17);
+        color: black;
+        background-color: none;
+
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+      
+
+    .donatebtn a{
+        right: 11rem;
+        top: 1.5rem;
+    }
+    .login i{
+       right: 7rem ; 
+       top: 1.5rem;       
+    }
+
+    .carousel img{
+        height: 30rem;
+    }
+     /****** welcome ****/
+
+    .welcome-allimg{
+        padding:.1rem 2rem .5rem 2rem;
+       
+    } 
+
+    .welcome-img{
+        width: calc(100%/2);
+      
+       
+    }
+
+    /****** event****/
+
+    .event-cont{
+        padding:.1rem 2rem .5rem 2rem;
+    }
+
+    .event-img{
+        width: calc(100%/2);
+      
+       
+    }
+      /*(******   about *********/
+
+
+    .about-cont{
+        padding:.1rem 4rem .5rem 4rem;
+    }
+  
+    
+    .about-img{
+        padding:4rem ;
+        width: calc(100%/2);
+      
+    }
+
+    /*  ***********
+     video ** */
+
+    .video-cont{
+        padding:.1rem 4rem .5rem 4rem;
+      
+    } 
+
+    .video-img{
+        width: calc(100%/2);
+    }
+
+      /*******   footer *********/
+
+    .footer{
+        height: 23rem
+    }
+
+    .footer-col{
+        padding: 1.5rem 2.5rem ;
+        width: calc(100%/2);
+
+    
+    }
+
+    
+    
+}
+
+
+
+
+
+
+@media(max-width:48rem){
+    .header{
+        height: 6rem;
+    }
+    .logo img{
+        height: 5rem;
+        width: 6rem;
+    }
+    
+    .menu{
+        display: block;
+        top: 1.5rem;
+    }
+    .donatebtn a{
+        right: 12rem;
+        top: 1.5rem;
+    }
+    .login i{
+        right: 7.5rem;
+        top: 1.5rem;
+    }
+     
+     /****** welcome ****/
+
+     .welcome-allimg{
+        padding:.1rem 1rem .5rem 1rem;
+       
+    } 
+
+    .welcome-img{
+        width: calc(100%/2);
+      
+       
+    }
+
+     /****** event****/
+     .event-cont{
+        padding:.1rem 2rem .5rem 2rem;
+    }
+
+    .event-img{
+        width: calc(100%/2);
+    }
+
+
+       /*******   about *********/
+
+    .about-cont{
+        padding:.1rem 1rem .5rem 1rem;
+    }
+
+     /*  ***********
+     counter  ** */
+
+     .counter{
+        height: 40rem;
+
+    }
+    .counterdiv1 {
+        top: 3rem;
+        left: 23%;
+        
+    }
+
+    #counter-Years{
+        top: 5rem;
+        left: 22%;
+    }   
+    
+    #counter-happychi{
+        top: -2rem;
+        left: 55%;
+    } 
+    
+    #counter-event{
+        top: 2rem;
+        left: 22%;
+    }
+
+    #counter-fund{
+        top: -4.5rem;
+        left: 55%;
+    }
+     
+    .video-cont{
+        padding:.1rem 1rem .5rem 1rem;
+      
+    } 
+    .video-img{
+        width: calc(100%/2);
+    }
+
+     /*******   footer *********/
+
+     .footer{
+        height: 39rem;
+    }
+
+    .socil-icone{
+        position: relative;
+        margin-left: 26rem;
+    }
+
+    .footer-col{
+        padding: 1.5rem 2.5rem ;
+        width: calc(100%); 
+    
+    }
+   
+    
+      
+    
+}
+
+@media(max-width:30rem){
+    .header p{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+    .donatebtn a{
+        right: 10rem;
+    }
+    .login i{
+        right: 6.5rem;
+    }
+
+     /****** welcome ****/
+
+    .welcome-img{
+        width: calc(100%/1);
+      
+       
+    }
+
+    /****** event****/
+    .event-cont{
+        padding:.1rem 1rem .5rem 1rem;
+    }
+
+    .event-img{
+        width: calc(100%/1);
+    }
+
+
+     /*(******   about *********/
+
+    .about-cont{
+        padding:.1rem 1rem .5rem 1rem;
+    }
+    .about-img{
+        padding:2rem ;
+        width: calc(100%/1);
+      
+       
+    }
+
+     /*  ***********
+     counter  ** */
+
+     .counter{
+        height: 40rem;
+
+    }
+    .counterdiv1 {
+        top: 3rem;
+        left: 7%;
+        
+    }
+
+    #counter-Years{
+        top: 5rem;
+        left: 9%;
+    }   
+    
+    #counter-happychi{
+        top: -2rem;
+        left: 50%;
+    } 
+    
+    #counter-event{
+        top: 2rem;
+        left: 9%;
+    }
+
+    #counter-fund{
+        top: -4.5rem;
+        left: 50%;
+    }
+
+    .video-img{
+        width: calc(100%/1);
+    }
+
+     /*******   footer *********/
+
+
+    .socil-icone{
+        position: relative;
+        margin-left: 0rem;
+    }
+
+
+      
+       
+}
+
