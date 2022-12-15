@@ -236,7 +236,7 @@ header label {
 }
 
 .welcome-to h1::after{
-    content: "Safezone-Active Humanity Foundation";
+    content: "SAFEZONE-Active Humanity Foundation";
     font-size: 2rem;
     color: #a8281a;
 
