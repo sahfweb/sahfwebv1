@@ -394,7 +394,7 @@ header label {
 }
 
 .about h1::after{
-    content: "HUMANITY";
+    content: "SAHF";
     font-size: 1.6rem;
     color: #a8281a;
 }
